@@ -1,0 +1,15 @@
+import { MdMessage } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import styles from "./Button.module.css";
+
+const Button = (props) => {
+  return (
+    <button className={styles.primary_btn}>
+      <MdMessage />
+      {props.icon}
+      {props.text}
+    </button>
+  );
+};
+
+export default Button;
